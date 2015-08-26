@@ -9,7 +9,7 @@ import mckee.daniel.model.Stock;
  * @author www.codejava.net
  *
  */
-//Data Access bject
+//Data Access OBJJ
 public interface StockDAO {
 	
 	public void save(Stock contact);

@@ -29,7 +29,8 @@ public class MvcConfiguration extends WebMvcConfigurerAdapter{
     private static final String PROPERTY_NAME_DATABASE_PASSWORD = "db.password";
     private static final String PROPERTY_NAME_DATABASE_URL = "db.url";
     private static final String PROPERTY_NAME_DATABASE_USERNAME = "db.username";
-	
+	private static final String BCDDDDDDDD="";
+    
 	@Resource
 	private Environment env;
 	

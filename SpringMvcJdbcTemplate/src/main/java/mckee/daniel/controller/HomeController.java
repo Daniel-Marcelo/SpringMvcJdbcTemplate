@@ -31,7 +31,7 @@ public class HomeController {
 	@Autowired
 	private StockDAO stockDAO;
 	
-	@RequestMapping(value="/")
+	@RequestMapping(value="/") //TEST COMMENT
 	public ModelAndView listContact(ModelAndView model) throws IOException{
 		List<Stock> listContact = stockDAO.list();
 		model.addObject("listContact", listContact);

@@ -32,8 +32,6 @@ public class StockDAOImpl implements StockDAO {
 			String sql = "INSERT INTO Stock (CompanyName , Ticker) VALUES(?,?)";
 			jdbcTemplate.update(sql, stock.getCompanyName(), stock.getTicker());
 
-		
-		
 	}
 
 	@Override

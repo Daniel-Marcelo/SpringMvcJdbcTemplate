@@ -1,7 +1,6 @@
 package mckee.daniel.dao;
 
 import java.util.List;
-
 import mckee.daniel.model.Stock;
 
 /**

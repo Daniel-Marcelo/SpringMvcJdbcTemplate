@@ -17,6 +17,9 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 import mckee.daniel.dao.StockDAO;
 import mckee.daniel.dao.StockDAOImpl;
+import mckee.daniel.dao.UserDAO;
+import mckee.daniel.dao.UserDAOImpl;
+
 
 @Configuration
 @ComponentScan(basePackages="mckee.daniel")
@@ -29,7 +32,6 @@ public class MvcConfiguration extends WebMvcConfigurerAdapter{
     private static final String PROPERTY_NAME_DATABASE_PASSWORD = "db.password";
     private static final String PROPERTY_NAME_DATABASE_URL = "db.url";
     private static final String PROPERTY_NAME_DATABASE_USERNAME = "db.username";
-	private static final String BCDDDDDDDD="";
     
 	@Resource
 	private Environment env;
@@ -62,5 +64,10 @@ public class MvcConfiguration extends WebMvcConfigurerAdapter{
 	@Bean
 	public StockDAO getStockDAO() {
 		return new StockDAOImpl(getDataSource());
+	}
+	
+	@Bean
+	public UserDAO getUserDAO() {
+		return new UserDAOImpl(getDataSource());
 	}
 }

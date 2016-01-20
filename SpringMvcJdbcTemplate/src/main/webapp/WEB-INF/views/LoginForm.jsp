@@ -16,7 +16,7 @@
     
 </head>
 <body>
-    <%@include file="header.html" %>
+    <%@include file="header.jsp" %>
     
 	<div align="center">
 		<h1>User Login</h1>
@@ -39,7 +39,7 @@
 		</form:form>
 	</div>
 	
-	    <%@include file="footer.html" %>
+	    <%@include file="footer.jsp" %>
 	
 </body>
 </html>

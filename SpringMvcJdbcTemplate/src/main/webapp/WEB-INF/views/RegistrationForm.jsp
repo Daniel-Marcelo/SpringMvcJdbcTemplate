@@ -24,7 +24,7 @@ td {
     
 </head>
 <body onload="document.registration.name.focus();">
-    <%@include file="header.html" %>
+    <%@include file="header.jsp" %>
     
 	<div align="center">
 		<h1>New User</h1>
@@ -54,7 +54,7 @@ td {
 		</form:form>
 	</div>
 	
-	    <%@include file="footer.html" %>
+	    <%@include file="footer.jsp" %>
 	
 </body>
 </html>
